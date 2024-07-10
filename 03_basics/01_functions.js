@@ -16,7 +16,7 @@ function loginUserMsg(username = "Sam"){
     // if(username === undefined){ 
     //       OR
     if(!username){
-        console.log("please enter the username");
+        // console.log("please enter the username");
         return
     }
     
@@ -24,5 +24,11 @@ function loginUserMsg(username = "Sam"){
     return `${username} just logged in`
 }
 
-console.log(loginUserMsg("Wasique"));
+// console.log(loginUserMsg("Wasique"));
 
+function calculateCartPrice(...num1){ 
+    //--> Rest Operator
+    return num1
+}
+
+console.log(calculateCartPrice(200,500));
