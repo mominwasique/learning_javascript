@@ -1,4 +1,4 @@
-let score = "33abcd"
+let score = "33abc"
 
 console.log(typeof score);
 console.log(typeof (score));
@@ -8,7 +8,7 @@ console.log(typeof valueInNumber);
 console.log(valueInNumber);
 
 // "33" => 33    // convert in number
-// "33abcd" =>  Nan (Not a Number)
+// "33abc" =>  Nan (Not a Number)
 // true => 1; false => 0
 // undefined => Nan
 // String => Nan
