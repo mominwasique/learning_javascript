@@ -8,7 +8,7 @@ console.log( "Wasique" );
 
   // DATATYPES IN JAVASCRIPT
 
-let name = "Wasique"
+let name = "Wasiq"
 let age = 21
 let isLoggedIn = false
 let state;
