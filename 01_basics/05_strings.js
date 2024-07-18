@@ -33,4 +33,4 @@ const url = "https://wasique.com/wasique%20"
 //  console.log(url.includes('haziq')); 
 console.log(newName.split(' '))
 
-// split method seperates the string using some seperators such as space, comma,hyphen,etc etc..
+// split method seperates the string using some seperators such as space, comma,hyphen,etc etc...
