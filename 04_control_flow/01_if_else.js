@@ -40,9 +40,35 @@
 //     console.log("Greater than 5000");
 // }
 
-const userLoggedIn = true
-const cardNumber = true
+    // AND OPERATOR
+// const userLoggedIn = true
+// const cardNumber = true
 
-if (userLoggedIn && cardNumber && 3 === "3") {
-    console.log("Allow to login");
-}
+// if (userLoggedIn && cardNumber && 3 === 3) {
+//     console.log("Allow to login");
+// }
+
+
+    // OR OPERATOR
+// const loggedInFromGoogle = true
+// const loggedInFromFacebook = false
+// 
+// if (loggedInFromGoogle || loggedInFromFacebook) {
+    // console.log("Logged in Successfull");
+// }
+
+//  Nullish coalescing operator(??): null undefined
+
+let val1;
+// val1 = 5 ?? 10 // 5
+// val1 = null ?? 10 // 10
+val1 = undefined ?? 10 // 10
+
+console.log(val1);
+
+// Terniary Operator
+
+//  condition ? true: false
+
+const price = 100
+price <=80 ? console.log("More than 80"):console.log("less than 80");
