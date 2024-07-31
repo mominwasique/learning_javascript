@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DOM</title>    
+    <title>DOM2</title>    
 </head>
 <body style="background-color: #212121; color: #fff;">
     <div class="weak">
-        <div class="days">Monday</div>
-        <div class="days">Tuesday</div>
-        <div class="days">Wednesday</div>
-        <div class="days">Thursday</div>
+        <!-- This is comment -->
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
     </div>
 </body>
 <script>
@@ -19,9 +20,17 @@
     // console.log(weak.children);
     // console.log(weak.children[1]);
     // console.log(weak.children[1].innerHTML);
-    for (let i = 0; i < weak.children.length; i++) {
-        console.log(weak.children[i].innerHTML);
-        
-    }
+    // for (let i = 0; i < weak.children.length; i++) {
+    //     console.log(weak.children[i].innerHTML);   
+    // }
+
+    weak.children[2].style.color = "orange"
+    // console.log(weak.firstElementChild);
+    // console.log(weak.lastElementChild);
+    const dayOne = document.querySelector('.day')
+    // console.log(dayOne);
+    // console.log(dayOne.parentElement);
+    // console.log(dayOne.nextElementSibling);
+    // console.log("Nodes: ", weak.childNodes);
 </script>
 </html>
