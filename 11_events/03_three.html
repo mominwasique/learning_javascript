@@ -6,21 +6,9 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Wasique</h1>
+    <h1>Background Changer</h1>
     <button id="start">Start</button>
     <button id="stop">Stop</button>
 </body>
-<script>
-    const newDate = function(str){
-        console.log(str, Date.now());  
-        let intervalRemove; 
-    }
-    document.querySelector('#start').addEventListener('click',function(){
-    intervalRemove = setInterval(newDate,1000,"Hello");
-    })
-
-document.querySelector('#stop').addEventListener('click', function(){
-    clearInterval(intervalRemove);
-})
-</script>
+<script src="three.js"></script>
 </html>
