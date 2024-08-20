@@ -19,7 +19,7 @@ let programmingExt = {
 }
 
 Object.prototype.wasique = function(){
-    console.log(`Extention of java is (.java)`);
+    // console.log(`Extention of java is (.java)`);
     
 }
 
@@ -31,8 +31,8 @@ Array.prototype.heyWasique = function(){
 // programmingExt.wasique();
 // programmingLang.wasique();
 
-programmingLang.heyWasique();
-programmingExt.heyWasique();
+// programmingLang.heyWasique();
+// programmingExt.heyWasique();
 
 // I create a function in prototype. // i.e. "Object.prototype.functionName = function(){}"
 // If Object access function , it will accessible by other  dataTypes such as
@@ -41,4 +41,36 @@ programmingExt.heyWasique();
 
 // Inheritance
 
+const user = {
+    name: "Wasique",
+    password: "Wasique@123",
+}
+const teacher = {
+    makeVideos: true
+}
 
+const teachingSupport = {
+    isAvailable: false
+}
+
+teacher.__proto__ = user
+
+// modern syntax
+Object.setPrototypeOf(teachingSupport, teacher)
+const TASupport = {
+    makeAssignment: "JS assignment",
+    fullTime: true,
+    __proto__: teachingSupport
+}
+
+let anotherUsername = "Wasiqurrahim    "
+
+String.prototype.trueLength = function(){
+    console.log(this);
+    console.log(this.name);
+    console.log(`True length is: ${this.trim().length}`);
+}
+
+anotherUsername.trueLength();
+"wasiq   ".trueLength();
+"hazique    ".trueLength();
