@@ -5,7 +5,7 @@ class User{
     }
 
     logMe(){
-         console.log(`Username is: ${this.username}`);
+         console.log(`Username is ${this.username}`);
          
     }
 }
@@ -28,4 +28,17 @@ class AnotherUser extends User {
 }
 
 const user = new AnotherUser("Wasique", "mohd@que.com", 123456);
-user.addInfo();
+// user.addInfo();
+user.logMe();
+
+const anotherUser = new User("Mohd")
+
+// anotherUser.addInfo();
+anotherUser.logMe();
+
+// console.log(user === anotherUser); // false
+// console.log(user === AnotherUser); // false
+// console.log(user instanceof AnotherUser); // true
+// console.log(user instanceof User); // true
+
+
